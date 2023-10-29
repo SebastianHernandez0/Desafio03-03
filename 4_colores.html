@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <style>
+        .layout{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .layout__div{
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            border: 1px solid black;
+        }
+        #layout__div--1{
+            background-color: blue;
+        }
+        #layout__div--2{
+            background-color: red;
+        }
+        #layout__div--3{
+            background-color: green;
+        }
+        #layout__div--4{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="layout__div " id="layout__div--1"></div>
+        <div class="layout__div " id="layout__div--2"></div>
+        <div class="layout__div " id="layout__div--3"></div>
+        <div class="layout__div " id="layout__div--4"></div>
+    </div>
+    <script>
+        let ele1=document.querySelector("#layout__div--1")
+        let ele2=document.querySelector("#layout__div--2")
+        let ele3=document.querySelector("#layout__div--3")
+        let ele4=document.querySelector("#layout__div--4")
+
+    
+        ele1.addEventListener("click",function(){
+            ele1.style.backgroundColor="black"
+        })
+        ele2.addEventListener("click",function(){
+            ele2.style.backgroundColor="black"
+        })
+        ele3.addEventListener("click",function(){
+            ele3.style.backgroundColor="black"
+        })
+        ele4.addEventListener("click",function(){
+            ele4.style.backgroundColor="black"
+        })
+
+    </script>
+</body>
+</html>
